@@ -1,0 +1,27 @@
+<!-- appointment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - Dental Care</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Book Your Appointment</h2>
+    <form id="appointmentForm">
+      <input type="text" name="patient_name" placeholder="Full Name" required />
+      <input type="email" name="patient_email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="date" name="appointment_date" required />
+      <input type="time" name="appointment_time" required />
+      <textarea name="message" placeholder="Additional Message (Optional)"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
